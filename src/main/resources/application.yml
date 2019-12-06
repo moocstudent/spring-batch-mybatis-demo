@@ -1,0 +1,16 @@
+mybatis:
+    configold-location: classpath:mybatis-cfg.xml
+    mapperold-locations: classpath:mappings/*.xml
+    type-aliases-package: com.example.batchprocessing.bean
+server:
+    port: 8010
+    servlet:
+        context-path: /
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: your_db_password
+        url: jdbc:mysql://127.0.0.1:3306/batch_test?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+        username: root
+    resources:
+        static-locations: classpath:/static/
